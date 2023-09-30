@@ -30,7 +30,7 @@ Este projeto tem como objetivo criar uma plataforma interativa que permita o cad
 1. Clone este repositório usando o comando: `git clone https://github.com/Dedecow/projetosSenai/`
 2. Navegue até o diretório do projeto: `cd projeto-avaliativo-senai`
 3. Instale as dependências citadas nas tecnologias utilizadas, marcadas no tópico anterior: `npm install`
-4. Inicie o servidor de desenvolvimento: `npm start`
+4. Inicie o servidor de desenvolvimento: `npm run dev`
 5. Acesse o aplicativo no seu navegador.
 
 ## Melhorias a implementar:

@@ -39,9 +39,6 @@ Este projeto tem como objetivo criar uma plataforma interativa que permita o cad
 ## Melhorias a implementar:
 
 - Largura do Select no cadastro de medicamentos
-- Responsividade nas páginas, não estão responsivas.
-- Retirar o acesso as rotas já na tela de login.
-- Backend para criar os medicamentos e farmácias.
 - Botão inserir Coordenadas Manualmente(tanto digitar quanto clicando no mapa)
 - Mensagem de FeedBack ao fazer o cadastro
 - Campo de Pesquisa na Aba Medicamentos

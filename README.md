@@ -13,13 +13,16 @@ Este projeto tem como objetivo criar uma plataforma interativa que permita o cad
 ## Tecnicas e tecnologias utilizadas
 
  - Consome as APIS: VIACEP e Leaflet
- - React-Router-DOM (npm install)
+ - React-Router-DOM (npm install react-router-dom)
  - React-VITE (npm install vite@latest)
- - MUI (npm install)
- - NODE (npm install ou baixe no site https://nodejs.org/)
- - NPM (npm install)
- - AXIOS (npm install)
- - LEAFLET e REACT LEAFLET (npm install)
+ - MUI (npm install @mui/material @mui/icons-material)
+ - NODE (npm install -g node ou baixe no site https://nodejs.org/)
+ - NPM (faz parte da instalação padrão do Node.js.)
+ - AXIOS (npm install axios)
+ - LEAFLET e REACT LEAFLET (
+   npm install leaflet,
+   npm install react-leaflet e
+   npm install leaflet@1.7.1 leaflet-defaulticon-compatibility )
  - HTML
  - CSS
  - JAVASCRIPT
@@ -28,7 +31,7 @@ Este projeto tem como objetivo criar uma plataforma interativa que permita o cad
 ## Como Executar
 
 1. Clone este repositório usando o comando: `git clone https://github.com/Dedecow/para-acesso-PSI-SAUDECAIXA`
-2. Navegue até o diretório do projeto: `cd para-acesso-PSI-SAUDECAIXA`
+2. Navegue até o diretório do projeto: `cd .\para-acesso-PSI-SAUDECAIXA\`
 3. Instale as dependências citadas nas tecnologias utilizadas, marcadas no tópico anterior: `npm install`
 4. Inicie o servidor de desenvolvimento: `npm run dev`
 5. Acesse o aplicativo no seu navegador.
@@ -36,6 +39,9 @@ Este projeto tem como objetivo criar uma plataforma interativa que permita o cad
 ## Melhorias a implementar:
 
 - Largura do Select no cadastro de medicamentos
+- Responsividade nas páginas, não estão responsivas.
+- Retirar o acesso as rotas já na tela de login.
+- Backend para criar os medicamentos e farmácias.
 - Botão inserir Coordenadas Manualmente(tanto digitar quanto clicando no mapa)
 - Mensagem de FeedBack ao fazer o cadastro
 - Campo de Pesquisa na Aba Medicamentos

@@ -14,7 +14,7 @@ Este projeto tem como objetivo criar uma plataforma interativa que permita o cad
 
  - Consome as APIS: VIACEP e Leaflet
  - React-Router-DOM (npm install)
- - React-VITE (npm install)
+ - React-VITE (npm install vite@latest)
  - MUI (npm install)
  - NODE (npm install)
  - NPM (npm install)

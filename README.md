@@ -16,7 +16,7 @@ Este projeto tem como objetivo criar uma plataforma interativa que permita o cad
  - React-Router-DOM (npm install)
  - React-VITE (npm install vite@latest)
  - MUI (npm install)
- - NODE (npm install)
+ - NODE (npm install ou baixe no site https://nodejs.org/)
  - NPM (npm install)
  - AXIOS (npm install)
  - LEAFLET e REACT LEAFLET (npm install)
@@ -27,8 +27,8 @@ Este projeto tem como objetivo criar uma plataforma interativa que permita o cad
 
 ## Como Executar
 
-1. Clone este repositório usando o comando: `git clone https://github.com/Dedecow/projetosSenai/`
-2. Navegue até o diretório do projeto: `cd projeto-avaliativo-senai`
+1. Clone este repositório usando o comando: `git clone https://github.com/Dedecow/para-acesso-PSI-SAUDECAIXA`
+2. Navegue até o diretório do projeto: `cd para-acesso-PSI-SAUDECAIXA`
 3. Instale as dependências citadas nas tecnologias utilizadas, marcadas no tópico anterior: `npm install`
 4. Inicie o servidor de desenvolvimento: `npm run dev`
 5. Acesse o aplicativo no seu navegador.

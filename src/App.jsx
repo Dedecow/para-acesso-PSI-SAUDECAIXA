@@ -25,15 +25,4 @@ function App() {
   )
 }
 
-// function App() {
-
-//   return (
-//     <>
-
-
-//       <MapaDeFarmaciasPage/>
-      
-//     </>
-//   )
-// }
 export default App;

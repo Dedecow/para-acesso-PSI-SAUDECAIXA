@@ -15,7 +15,6 @@ function Login (){
         if (email.trim() === "" || password.trim() === "") {
           setShowError(true);
         } else if (!isValidEmail(email) || !isValidSenha(password)) {
-        //   console.log("isValidEmail", isValidEmail(email))
           setShowError(true);
         } else {
           setShowError(false);
@@ -29,24 +28,16 @@ function Login (){
         
         return atIndex > 0 && dotIndex > atIndex + 1 && dotIndex < email.length - 1;
     };
-    // const isValidSenha = (password) => {
-    //     let passwordValid = false;
-    //     if (password.length >= 8){
-    //         passwordValid= true
-    //     }
-    //     console.log("passwordValid", passwordValid)
-    //     return passwordValid;
-    // }
+ 
     const isValidSenha = (password) => {
         return password.length >= 8 && /[a-zA-Z]/.test(password) && /\d/.test(password);
     }
-    // console.log("showError", showError)
-
     return(
         <form>  
         <p> Medication Management - Mais que farmácia, um centro de saúde. </p>
         <img className="logo" src={logo} alt="Logo da Farmácia" />      
-        <p> Seja Bem Vindo, faça seu login para continuar </p>
+        <p> Seja Bem Vindo, faça seu login  para continuar</p>
+        <p>(email@email.com, senha: Psi123456)</p>
         
         <TextField 
             type="email" 
@@ -63,7 +54,6 @@ function Login (){
             value={password}
             type="password"
             onChange={(e) => setPassword(e.target.value)}
-            // inputProps={{ minLength:8 }}
         /> 
         {showError ? <p> Digite um email válido e senha alfanumérica com pelo menos 8 caracteres.</p>:''}
 

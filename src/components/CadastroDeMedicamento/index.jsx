@@ -1,5 +1,4 @@
 import { Button, MenuItem, TextField, TextareaAutosize } from "@mui/material";
-// import { SelectTipoMedicamento } from '../SelectTipoMedicamento';
 import { useEffect, useState } from 'react';
 import './styled.css';
 
@@ -15,14 +14,12 @@ function CadastroDeMedicamento (){
     });
 
     const [lista, setLista] = useState([]);
-    // carregar a lista de medicamentos
-    useEffect(() => {
+       useEffect(() => {
         if(localStorage.getItem('lista_medicamentos') !== null) {
             setLista(JSON.parse(localStorage.getItem('lista_medicamentos')))
         }
     }, [])
-    
-    // atualizar a lista de medicamentos
+  
     useEffect(() => {
         localStorage.setItem('lista_medicamentos', JSON.stringify(lista))
     }, [lista])
@@ -36,27 +33,13 @@ function CadastroDeMedicamento (){
         e.preventDefault();console.log(lista);setLista([...lista, medicamento])
     };
 
-    // const getDados = async(e)=> {
-    //     try {
-    //         const response = await axios.get(
-    //          `http://viacep.com.br/ws/${cep}/json/`
-    //         )
-    //     console.log(response);
-    //     } catch (error) { 
-    //         console.log(error)
-    //     }
-    //     // fetch(`viacep.com.br/ws/${cep}/json/`).then(res => res.json()).then(data => {
-    //     //     console.log(data);
-    //     //     })
-    // }
-
+   
     const [selectedOption, setSelectedOption] = useState('');
 
     const handleChangeSelect = (event) => {
     setSelectedOption(event.target.value);
     };
 
-    // preco unitario e select não funcionam
     return (
         <form className = "container" onSubmit={handleSubmit}>
         
@@ -71,29 +54,12 @@ function CadastroDeMedicamento (){
         <TextField
         select
         label="Selecione o Tipo" value={medicamento.tipo} onChange={handleChange}
-        // value={medicamento.descricao}
-        // onChange={handleChange}
         variant="outlined"
         fullWidth
         >
         <MenuItem name="tipo">Medicamento Comum</MenuItem>
         <MenuItem name="tipo">Medicamento Controlado</MenuItem>
         </TextField>
-
-
-        {/* <Select 
-        // label="Tipo" 
-        // variant="outlined" 
-        // required = {true} 
-        // value={tipo} 
-        // onChange={(e) => setTipo(e.target.value)}>
-        //     {tipos.map((tipoOption) => (
-        //     <MenuItem key={tipoOption} value={tipoOption}>
-        //         {tipoOption}
-        //     </MenuItem> 
-        //     ))}
-        //     </Select> */}
-        {/* // <SelectTipoMedicamento tipo={tipo} setTipo={setTipo} />   */}
         </div>
 
         <div className ="text-area">
